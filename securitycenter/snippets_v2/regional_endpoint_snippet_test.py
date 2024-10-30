@@ -14,15 +14,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import os
+
 import pytest
+
 import regional_endpoint_snippet
+
 
 @pytest.fixture(scope="module")
 def parent():
     return f"{(os.environ['DRZ_SA_ORGANIZATION'])}/sources/-/locations/sa"
 
+
 def endpoint():
     return "securitycenter.me-central2.rep.googleapis.com"
+
 
 def test_rep_list_finding():
     count = regional_endpoint_snippet.rep_list_finding(parent, endpoint)

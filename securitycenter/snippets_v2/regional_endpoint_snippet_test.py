@@ -14,8 +14,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 import os
-import regional_endpoint_snippet
 import pytest
+import regional_endpoint_snippet
 
 @pytest.fixture(scope="module")
 def parent():

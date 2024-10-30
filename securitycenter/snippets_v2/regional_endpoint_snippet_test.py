@@ -19,7 +19,7 @@ import pytest
 
 @pytest.fixture(scope="module")
 def parent():
-    return f"{(os.environ["DRZ_SA_ORGANIZATION"])}/sources/-/locations/sa"
+    return f"{(os.environ['DRZ_SA_ORGANIZATION'])}/sources/-/locations/sa"
 
 def endpoint():
     return "securitycenter.me-central2.rep.googleapis.com"
